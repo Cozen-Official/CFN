@@ -1,4 +1,8 @@
-pip install -U discord.py
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", discord.py])
 
 import discord
 from discord.ext import commands
